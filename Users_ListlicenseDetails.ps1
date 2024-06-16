@@ -36,7 +36,7 @@ foreach ($GetUserUPN in $GetUsersUPN) {
     }
     #endregion
 
-    #region Invoke-WebRequest
+    #region Invoke-RestMethod
     $DataWR = Invoke-RestMethod @RequestProperties
     Write-Host "$GetUserUPN" -BackgroundColor Cyan -ForegroundColor Black
     Write-Output "--------------------------------------"
@@ -44,6 +44,6 @@ foreach ($GetUserUPN in $GetUsersUPN) {
     Write-Output "--------------------------------------"
     Write-Output " "
     $DataWR.value.servicePlans | Sort-Object appliesTo
-    
+    #endregion
 }
 
