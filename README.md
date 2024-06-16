@@ -1,2 +1,2 @@
-# Entra-O365_Users_licenseDetails
-Users ListlicenseDetails
+# Entra/O365 Users licens Report
+- Users List license Details
